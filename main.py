@@ -1,8 +1,4 @@
-from math_operations import AMOUNT
-from math_operations import DIFFERENCE
-from math_operations import COMPOSITION
-from math_operations import DIVISION
-
+from math_operations import AMOUNT, DIFFERENCE, COMPOSITION, DIVISION
 
 first_number=input('Please write the first number:' )
 second_number=input('Please write the second number:' )
@@ -20,15 +16,14 @@ except ValueError:
 print('Possible actions: AMOUNT,  DIFFERENCE, COMPOSITION, DIVISION')
 action=input('Pleace enter the action you want to perform on the numbers:')
 
-
-if action == 'AMOUNT' or action == 'amount':
-    print(AMOUNT(first_number, second_number))
-
-if action == 'DIFFERENCE' or action == 'difference':
-    print(DIFFERENCE(first_number, second_number))
-
-if action == 'COMPOSITION' or action == 'composition':
-    print(COMPOSITION(first_number, second_number))
-
-if action == 'DIVISION' or action == 'division':
-    print(DIVISION(first_number, second_number))
+operations={
+    'amount': AMOUNT,
+    'difference': DIFFERENCE,
+    'composiotion': COMPOSITION,
+    'division': DIVISION,
+}
+action_lower=action.lower() 
+if action_lower in operations:
+    print(operations[action_lower](first_number, second_number))
+else:
+    print('The operatin was not found. Check the correctness of the introduction')
