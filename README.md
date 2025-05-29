@@ -1,2 +1,3 @@
 # Terminal-calculator
-## Описание
+# EN
+# RU
