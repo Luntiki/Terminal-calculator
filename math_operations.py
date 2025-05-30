@@ -1,4 +1,29 @@
+import math
+
+# module math
+
+## 2 numbers
+
+def comb(first_number, second_number):
+    return math.comb(first_number, second_number)
+
+def perm(first_number, second_number):
+    return math.perm(first_number, second_number)
+
+def copysign(first_number, second_number):
+    return math.copysign(first_number, second_number)
+
+def isclose(first_number, second_number):
+    rel_tol=float(abs(input("Enter the relative error: ")))
+    abs_tol=float(abs(input("Enter the absolute tolerance: ")))
+    return math.isclose(first_number, second_number, rel_tol, abs_tol)
+
+
+## 1 numbers
+
 # basic python mathematical operaions 
+## 2 numbers
+
 def amount(first_number, second_number):
     return first_number + second_number
 
