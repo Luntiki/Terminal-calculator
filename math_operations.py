@@ -43,7 +43,7 @@ def perm(first_number, second_number):
 def copysign(first_number, second_number):
     return math.copysign(first_number, second_number)
 
-def isclose(first_number, second_number):
+def isclose(first_number, second_number): #error
     rel_tol=float(abs(input("Enter the relative error: ")))
     abs_tol=float(abs(input("Enter the absolute tolerance: ")))
     return math.isclose(first_number, second_number, rel_tol, abs_tol)
