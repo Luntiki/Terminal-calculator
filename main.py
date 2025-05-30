@@ -1,4 +1,4 @@
-from math_operations import AMOUNT, DIFFERENCE, COMPOSITION, DIVISION, DEGRE, QUOTIENT, REMAINDER
+from math_operations import amount, difference, composition, division, degre, quotient, remainder
 
 first_number=input('Please write the first number:' )
 second_number=input('Please write the second number:' )
@@ -13,20 +13,23 @@ try:
 except ValueError:
     print('Error. Please write an intenger or decimal number')
 
-print('Possible actions: AMOUNT,  DIFFERENCE, COMPOSITION, DIVISION, DEGRE, QUOTIENT, REMAINDER')
-action=input('Pleace enter the action you want to perform on the numbers:')
+def action():
+    print('Possible actions: AMOUNT,  DIFFERENCE, COMPOSITION, DIVISION, DEGRE, QUOTIENT, REMAINDER')
+    action=input('Pleace enter the action you want to perform on the numbers: ')
 
-operations={
-    'amount': AMOUNT,
-    'difference': DIFFERENCE,
-    'composiotion': COMPOSITION,
-    'division': DIVISION,
-    'degre': DEGRE,
-    'quotient': QUOTIENT,
-    'remainder': REMAINDER,
-}
-action_lower=action.lower() 
+    operations={
+        'amount': amount,
+        'difference': difference,
+        'composiotion': composition,
+        'division': division,
+        'degre': degre,
+        'quotient': quotient,
+        'remainder': remainder,
+    }
+    action_lower=action.lower() 
+action()
 if action_lower in operations:
     print(operations[action_lower](first_number, second_number))
 else:
     print('The operatin was not found. Check the correctness of the introduction')
+    action()
