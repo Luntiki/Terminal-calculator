@@ -5,15 +5,11 @@ def two_numbers():
     second_number=input('Please write the second number: ')
     try:
         if list(first_number).count('.') > 0 or list(second_number).count('.') > 0: 
-            first_number = float(first_number)
-            second_number = float(second_number)
+            first_number, second_number = float(first_number), float(second_number)
         else:
-            first_number = int(first_number)
-            second_number = int(second_number)
+            first_number, second_number = int(first_number), int(second_number)
     except ValueError:
         return('Error. Please write an intenger or decimal number')
-
-
 
     def choosing_an_action(first_number, second_number):
         print('Possible actions: AMOUNT,  DIFFERENCE, COMPOSITION, DIVISION, DEGRE, QUOTIENT, REMAINDER')
@@ -34,5 +30,6 @@ def two_numbers():
             print('The operatin was not found. Check the correctness of the introduction')
             choosing_an_action(first_number, second_number)
 
-    print(choosing_an_action(first_number, second_number))
-two_numbers()
+    return choosing_an_action(first_number, second_number)
+
+print(two_numbers())
