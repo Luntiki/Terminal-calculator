@@ -74,7 +74,7 @@ def two_numbers():
         return('Error. Please write an intenger or decimal number')
 
     def choosing_an_action(first_number, second_number):
-        print('Possible actions: AMOUNT,  DIFFERENCE, COMPOSITION, DIVISION, DEGRE, QUOTIENT, REMAINDER')
+        print('Possible actions: AMOUNT,  DIFFERENCE, COMPOSITION, DIVISION, DEGRE, QUOTIENT, remainder')
         action=input('Please enter the action you want to perform on the numbers: ')
         operations={
             'amount': amount,
