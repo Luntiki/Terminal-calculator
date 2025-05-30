@@ -1,19 +1,19 @@
 from math_operations import amount, difference, composition, division, degre, quotient, remainder
 
-first_number=input('Please write the first number:' )
-second_number=input('Please write the second number:' )
+def two_numbers():
+    first_number=input('Please write the first number:' )
+    second_number=input('Please write the second number:' )
 
-try:
-    if list(first_number).count('.') > 0 or list(second_number).count('.') > 0: 
-        first_number = float(first_number)
-        second_number = float(second_number)
-    else:
-        first_number = int(first_number)
-        second_number = int(second_number)
-except ValueError:
-    print('Error. Please write an intenger or decimal number')
+    try:
+        if list(first_number).count('.') > 0 or list(second_number).count('.') > 0: 
+            first_number = float(first_number)
+            second_number = float(second_number)
+        else:
+            first_number = int(first_number)
+            second_number = int(second_number)
+    except ValueError:
+        return('Error. Please write an intenger or decimal number')
 
-def action():
     print('Possible actions: AMOUNT,  DIFFERENCE, COMPOSITION, DIVISION, DEGRE, QUOTIENT, REMAINDER')
     action=input('Pleace enter the action you want to perform on the numbers: ')
 
@@ -27,9 +27,9 @@ def action():
         'remainder': remainder,
     }
     action_lower=action.lower() 
-action()
-if action_lower in operations:
-    print(operations[action_lower](first_number, second_number))
-else:
-    print('The operatin was not found. Check the correctness of the introduction')
-    action()
+
+    if action_lower in operations:
+        return(operations[action_lower](first_number, second_number))
+    else:
+        print('The operatin was not found. Check the correctness of the introduction')
+print(two_numbers())
