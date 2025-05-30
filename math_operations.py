@@ -1,5 +1,32 @@
 import math
 
+# basic python mathematical operaions 
+## 2 numbers
+
+def amount(first_number, second_number):
+    return first_number + second_number
+
+def difference(first_number, second_number):
+    return first_number - second_number
+
+def composition(first_number, second_number):
+    return first_number * second_number
+
+def division(first_number, second_number):
+    if second_number != 0:
+        return first_number / second_number
+    else:
+        return 'Error. In cannot be divided by 0'
+
+def degre(first_number, second_number):
+    return first_number ** second_number
+
+def quotient(first_number, second_number):
+    return first_number // second_number
+
+def remainder(first_number, second_number):
+    return first_number % second_number
+
 # module math
 ## 2 numbers
 
@@ -73,10 +100,10 @@ def log1p(number_one):
 def log2(number_one):
     return math.log10(number_one)
 
-def degress(number_one)
+def degress(number_one):
     return math.degrees(number_one)
 
-def radians(number_one)number_one:
+def radians(number_one):
     return math.radians(number_one)
 
 def acos(number_one):
@@ -123,34 +150,6 @@ def erfc(number_one):
 
 def gamma(number_one):
     return math.gamma(number_one)
-number_one
+
 def lgamma(number_one):
     return math.lgamma(number_one)
-
-
-# basic python mathematical operaions 
-## 2 numbers
-
-def amount(first_number, second_number):
-    return first_number + second_number
-
-def difference(first_number, second_number):
-    return first_number - second_number
-
-def composition(first_number, second_number):
-    return first_number * second_number
-
-def division(first_number, second_number):
-    if second_number != 0:
-        return first_number / second_number
-    else:
-        return 'Error. In cannot be divided by 0'
-
-def degre(first_number, second_number):
-    return first_number ** second_number
-
-def quotient(first_number, second_number):
-    return first_number // second_number
-
-def remainder(first_number, second_number):
-    return first_number % second_number
