@@ -18,8 +18,12 @@ def isclose(first_number, second_number):
     abs_tol=float(abs(input("Enter the absolute tolerance: ")))
     return math.isclose(first_number, second_number, rel_tol, abs_tol)
 
+def dist(first_number, second_number):
+    return math.dist(first_number, second_number)
 
 ## 1 numbers
+
+
 
 # basic python mathematical operaions 
 ## 2 numbers
