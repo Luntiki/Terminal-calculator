@@ -7,4 +7,4 @@ if quantity == 1:
 elif quantity == 2:
     print(two_numbers())
 else:
-    print()
+    ...

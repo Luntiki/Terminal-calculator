@@ -1,4 +1,4 @@
-from math_operations import amount, difference, composition, division, degre, quotient, remainder, comb, perm
+from math_operations import amount, difference, composition, division, degre, quotient, remainder, comb, perm, copysign, isclose, dist
 from math_operations import factorial
 
 def one_number():
