@@ -31,8 +31,12 @@ def remainder(first_number, second_number):
 ## 2 numbers
 
 def comb(first_number, second_number):
-    return math.comb(first_number, second_number)
-
+    try:
+        return math.comb(first_number, second_number)
+    except TypeError:
+        print ('Error. The required data type is integer')
+        
+        
 def perm(first_number, second_number):
     return math.perm(first_number, second_number)
 

@@ -12,7 +12,7 @@ def one_number():
     except ValueError:
         return('Error. Please write an intenger or decimal number')
     def choosing_an_action(number_one):
-        print("Possible actions: factorial and other functions for a single number")
+        print("Possible actions: factorial and actorial, isqrt, ceil, fabs, floor, modf, trunc, frexp, ldexp, ulp, cbrt, exp, exp2, expm1, log, log1p, log2, degress, radians, acos, asin, atan, cos, sin, tan, acosh, asinh, atanh, cosh, sinh, tanh, erf, erfc, gamma, lgamma")
         action=(input("Please enter the action you want to perform on the numbers: "))
         operations={
             'factorial': factorial,
@@ -79,7 +79,7 @@ def two_numbers():
         operations={
             'amount': amount,
             'difference': difference,
-            'composiotion': composition,
+            'composition': composition,
             'division': division,
             'degre': degre,
             'quotient': quotient,
