@@ -1,4 +1,4 @@
-from math_operations import amount, difference, composition, division, degre, quotient, remainder
+from math_operations import amount, difference, composition, division, degre, quotient, remainder, comb, perm
 from math_operations import factorial
 
 def one_number():
@@ -46,6 +46,11 @@ def two_numbers():
             'degre': degre,
             'quotient': quotient,
             'remainder': remainder,
+            'comb': comb,
+            'perm': perm,
+            'copysign': copysign,
+            'isclose': isclose,
+            'dist': dist,
         }
         action_lower=action.lower() 
         try:
