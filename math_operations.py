@@ -12,3 +12,12 @@ def DIVISION(first_number, second_number):
         return first_number / second_number
     else:
         return 'Error. In cannot be divided by 0'
+
+def DEGRE(first_number, second_number):
+    return first_number ** second_number
+
+def QUOTIENT(first_number, second_number):
+    return first_number // second_number
+
+def REMAINDER(first_number, second_number):
+    return first_number % second_number
