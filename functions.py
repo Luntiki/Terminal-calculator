@@ -1,6 +1,4 @@
-from math_operations import amount, difference, composition, division, degre, quotient, remainder, comb, perm, copysign, isclose, dist
-from math_operations import factorial, isqrt, ceil, fabs, floor, modf, trunc, frexp, ldexp, ulp, cbrt, exp, exp2, expm1, log, log1p, log2, degress, radians, acos, asin, atan, cos, sin, tan, acosh, asinh, atanh, cosh, sinh, tanh, erf, erfc, gamma, lgamma
-from math_operations import average_value
+from math_operations import *
 
 def one_number():
     number_one=input("Please write the number: ")

@@ -1,5 +1,4 @@
-from functions import one_number, two_numbers, set_of_numbers
-
+from functions import *
 def main():
     print('What do you want to spend? operations for a single number (ofs) or operations for two numbers (oft) or operations for multiple numbers(ofm)')
     main_action=input("Please write your action in a small format: ")
