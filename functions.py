@@ -10,6 +10,7 @@ def one_number():
     except ValueError:
         print('Error. Please write an intenger or decimal number')
         return one_number()
+    
     def choosing_an_action(number_one):
         print("Possible actions: factorial, actorial, isqrt, ceil, fabs, floor, modf, trunc, frexp, ldexp, ulp, cbrt, exp, exp2, expm1, log, log1p, log2, degress, radians, acos, asin, atan, cos, sin, tan, acosh, asinh, atanh, cosh, sinh, tanh, erf, erfc, gamma, lgamma")
         action=(input("Please enter the action you want to perform on the number: "))
@@ -55,6 +56,7 @@ def one_number():
             return operations[action_lower](number_one)
         except KeyError:
             print('The operatin was not found. Check the correctness of the introduction')
+            return choosing_an_action(number_one)
     return choosing_an_action(number_one)
 
 
@@ -70,6 +72,7 @@ def two_numbers():
     except ValueError:
         print('Error. Please write an intenger or decimal number')
         return two_numbers()
+    
     def choosing_an_action(first_number, second_number):
         print('Possible actions: amount,  difference, composition, division, degre, quotient, remainder, comb, perm, copysign, isclose, dist')
         action=input('Please enter the action you want to perform on the numbers: ')
@@ -92,8 +95,7 @@ def two_numbers():
             return operations[action_lower](first_number, second_number)
         except KeyError:
             print('The operatin was not found. Check the correctness of the introduction')
-            choosing_an_action(first_number, second_number)
-
+            return choosing_an_action(first_number, second_number)
     return choosing_an_action(first_number, second_number)
 
 
