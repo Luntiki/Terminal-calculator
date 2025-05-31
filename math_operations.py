@@ -1,5 +1,12 @@
 import math
 
+# native funstions
+## set of numbers
+
+def average_value(son):
+    return sum(son)/len(son)
+
+
 # basic python mathematical operaions 
 ## 2 numbers
 
