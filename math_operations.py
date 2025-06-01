@@ -109,6 +109,9 @@ def log1p(number_one):
     return math.log1p(number_one)
 
 def log2(number_one):
+    return math.log2(number_one)
+
+def log10(number_one):
     return math.log10(number_one)
 
 def degress(number_one):
