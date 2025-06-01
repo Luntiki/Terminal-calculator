@@ -32,6 +32,7 @@ def one_number():
             'log': log,
             'log1p': log1p,
             'log2': log2,
+            'log10': log10,
             'degress': degress,
             'radians': radians,
             'acos': acos,
