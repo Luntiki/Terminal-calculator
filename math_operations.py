@@ -20,10 +20,10 @@ def composition(first_number, second_number):
     return first_number * second_number
 
 def division(first_number, second_number):
-    if second_number != 0:
-        return first_number / second_number
-    else:
-        return 'Error. In cannot be divided by 0'
+    try:
+        return first_number/second_number
+    except ZeroDivisionError:
+        return 'Error. You can not divide by zero.'
 
 def degre(first_number, second_number):
     return first_number ** second_number
@@ -41,8 +41,7 @@ def comb(first_number, second_number):
     try:
         return math.comb(first_number, second_number)
     except TypeError:
-        print ('Error. The required data type is integer')
-        
+        print ('Error. The required data type is integer')        
         
 def perm(first_number, second_number):
     return math.perm(first_number, second_number)
